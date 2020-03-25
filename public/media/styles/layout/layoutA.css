@@ -1,0 +1,8 @@
+.App {
+  display: grid;
+  grid-template-rows: 96px 1fr;
+  grid-template-columns: 1fr 1fr 100px;
+}
+
+.Button {
+}

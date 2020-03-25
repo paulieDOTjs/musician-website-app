@@ -6,7 +6,7 @@ import * as Actions from "./Actions";
 export const StyleContext = createContext();
 
 const initialState = {
-  color: "DarkMode"
+  DarkMode: true
 };
 
 export default function StyleProvider(props) {

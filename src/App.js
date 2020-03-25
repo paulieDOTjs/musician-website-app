@@ -6,22 +6,21 @@ import TourPage from "./Pages/TourPage";
 import StorePage from "./Pages/StorePage";
 import "./App.css";
 import Links from "./Components/Links/Links";
+import Button from "./Components/Button/Button";
 
 function App() {
-  const darkMode = false;
   return (
     <StyleProvider>
       <Router>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/tour" component={TourPage} />
-        <Route path="/store" component={StorePage} />
-        <Links />
         <div className="App">
+          <Route exact path="/" component={HomePage} />
+          <Route path="/tour" component={TourPage} />
+          <Route path="/store" component={StorePage} />
+          <Links />
+          <Button />
           <link
             rel="stylesheet"
-            href={`${process.env.PUBLIC_URL}/media/styles/${
-              darkMode ? "DarkMode.css" : "LightMode.css"
-            }`}
+            href={`${process.env.PUBLIC_URL}/media/styles/layout/layoutA.css`}
           />
         </div>
       </Router>
